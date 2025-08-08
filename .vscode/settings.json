@@ -1,0 +1,16 @@
+{
+  "cmake.generator": "Ninja",
+  "cmake.sourceDirectory": "${workspaceFolder}/llvm",
+  "cmake.buildDirectory": "${workspaceFolder}/build",
+  "cmake.configureSettings": {
+    "CMAKE_BUILD_TYPE": "Release",
+    "LLVM_ENABLE_PROJECTS": "mlir",
+    "LLVM_BUILD_EXAMPLES": "ON",
+    "LLVM_TARGETS_TO_BUILD": "Native;NVPTX;AMDGPU",
+    "CMAKE_C_COMPILER": "clang",
+    "CMAKE_CXX_COMPILER": "clang++",
+    "LLVM_ENABLE_LLD": "ON",
+    "LLVM_CCACHE_BUILD": "ON",
+    "LLVM_ENABLE_ASSERTIONS": "ON"
+  }
+}
